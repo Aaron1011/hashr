@@ -1,4 +1,4 @@
-class Hashr < Hash
+class Hashr
   module EnvDefaults
     attr_writer :env_namespace
 
@@ -24,7 +24,8 @@ class Hashr < Hash
             deep_enverize(value, nesting)
           else
             ENV.fetch(nesting.join('_'), value)
-          end.tap { nesting.pop }
+          end
+          nesting.pop
         end
       end
   end

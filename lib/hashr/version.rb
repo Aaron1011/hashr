@@ -1,3 +1,5 @@
-class Hashr < Hash
+require 'hashr'
+
+class Hashr
   VERSION = '0.0.22'
 end

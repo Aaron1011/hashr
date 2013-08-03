@@ -18,5 +18,6 @@ Gem::Specification.new do |s|
   s.rubyforge_project = '[none]'
 
   s.add_development_dependency 'rake'
+  s.add_development_dependency 'guard-test'
   s.add_development_dependency 'test_declarative', '>=0.0.2'
 end
